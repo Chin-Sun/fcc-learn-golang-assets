@@ -1,7 +1,12 @@
 package main
 
+import "fmt"
+
 func getSMSErrorString(cost float64, recipient string) string {
-	// ?
+	// return "SMS that costs ${COST} to be sent to ${RECIPIENT} can not be sent"
+	return fmt.Sprintln("SMS that costs %.2f to be sent to %v can not be sent",
+		     cost,
+		     recipient,
 }
 
 // don't edit below this line
