@@ -8,9 +8,13 @@ type divideError struct {
 	dividend float64
 }
 
-// ?
+func (d divideError) Error() string{
+	return fmt.Sprintln("can not divide %v by zero", 
+			    d.dividend,
+			   )
+}
 
-// don't edit below this line
+
 
 func divide(dividend, divisor float64) (float64, error) {
 	if divisor == 0 {
