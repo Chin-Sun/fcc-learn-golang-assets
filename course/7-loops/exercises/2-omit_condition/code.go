@@ -5,7 +5,7 @@ import (
 )
 
 func maxMessages(thresh float64) int {
-	// ?
+	return (thresh - 1.0) / (0.01)
 }
 
 // don't edit below this line
